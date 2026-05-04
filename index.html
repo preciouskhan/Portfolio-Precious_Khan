@@ -1,168 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Ndoh Precious Khan Portfolio</title>
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-
-  <!-- ICONS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ndoh Precious Khan — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
 
-<!-- HERO -->
-<section class="hero">
+<!-- ══════════════════════════════
+     NAV
+══════════════════════════════ -->
+<nav>
+  <div class="nav-logo"><span>&lt;</span>PK<span> /&gt;</span></div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#certifications">Certs</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════
+     HERO
+══════════════════════════════ -->
+<div class="hero">
   <div class="hero-container">
 
+    <!-- LEFT TEXT -->
     <div class="hero-text">
-      <h2 class="portfolio-title">PORTFOLIO</h2>
-      <h1>Ndoh Precious Khan</h1>
-      <p class="subtitle">Cybersecurity Student | Graphic Designer | Entrepreneur</p>
-      <p>
-        Passionate about cybersecurity, artificial intelligence, creative design, photography, and entrepreneurship.
-        I use technology and creativity to create impact and solve real-world problems.
+      <div class="hero-greeting">Hi there, I'm</div>
+      <h1>
+        Ndoh <span class="portfolio-title">Precious</span> Khan
+      </h1>
+      <p class="hero-roles">
+        <strong>Cybersecurity Student</strong> &nbsp;·&nbsp;
+        <strong>Graphic Designer</strong> &nbsp;·&nbsp;
+        <strong>Entrepreneur</strong>
       </p>
-
-      <a href="#contact" class="btn">Contact Me</a>
-    </div>
-
-    <div class="hero-image">
-      <div class="image-frame">
-        <img src="images/profile.jpg" alt="Profile Picture">
+      <p class="hero-desc">
+        Passionate about cybersecurity, AI, creative design, photography,
+        and entrepreneurship — using technology and creativity to create
+        impact and solve real-world problems.
+      </p>
+      <div class="hero-btns">
+        <a href="#contact" class="btn btn-primary">Contact Me</a>
+        <a
+          href="https://www.linkedin.com/in/precious-khan-042b46299"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-linkedin"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85
+              0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9
+              1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29zM5.34
+              7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0
+              4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0
+              .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24
+              23.23 24 22.27V1.73C24 .77 23.2 0 22.22 0z"/>
+          </svg>
+          LinkedIn
+        </a>
+        <a href="#projects" class="btn btn-outline">View Projects</a>
       </div>
     </div>
 
+    <!-- RIGHT IMAGE -->
+    <div class="hero-image">
+      <div class="image-frame">
+        <img
+          src="images/profile.jpg"
+          alt="Ndoh Precious Khan"
+          onerror="this.style.display='none'"
+        />
+        <div class="dot-grid"></div>
+      </div>
+    </div>
+
+  </div><!-- /hero-container -->
+</div><!-- /hero -->
+
+
+<!-- ══════════════════════════════
+     ABOUT
+══════════════════════════════ -->
+<section id="about" class="reveal">
+  <h2><span class="section-num">01.</span> About Me</h2>
+  <div class="about-grid">
+    <div class="about-bio">
+      <p>
+        I am <strong>Ndoh Precious Khan</strong>, a final-year Cybersecurity
+        student at <strong>ICT University, Cameroon</strong>. I'm passionate
+        about cybersecurity, Entrepreneurship, Photography, artificial intelligence, and ethical technology.
+      </p>
+      <p>
+        Beyond tech, I'm a creative designer, photographer, and Entrepreneur.
+        I use my skills to tell stories, build brands, and inspire confidence —
+        especially among young people and women.
+      </p>
+    </div>
+    <div class="stats-grid">
+      <div class="stat-box">
+        <div class="stat-num">4+</div>
+        <div class="stat-label">Projects</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">10+</div>
+        <div class="stat-label">Certifications</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">5+</div>
+        <div class="stat-label">Volunteer Roles</div>
+      </div>
+      <div class="stat-box">
+        <div class="stat-num">3</div>
+        <div class="stat-label">Active Orgs</div>
+      </div>
+    </div>
   </div>
 </section>
 
-<!-- ABOUT -->
-<section>
-  <h2><i class="fas fa-user"></i> About Me</h2>
-  <p>
-    I am Ndoh Precious Khan, a final-year Cybersecurity student at ICT University, Cameroon.
-    I am passionate about cybersecurity, artificial intelligence, and ethical technology.
-  </p>
-  <p>
-    Beyond tech, I am a creative designer, photographer, and content creator. I use my skills
-    to tell stories, build brands, and inspire confidence—especially among young people and women.
-  </p>
-</section>
 
-<!-- SKILLS -->
-<section>
-  <h2><i class="fas fa-code"></i> Skills</h2>
-
+<!-- ══════════════════════════════
+     SKILLS
+══════════════════════════════ -->
+<section id="skills" class="reveal">
+  <h2><span class="section-num">02.</span> Skills</h2>
   <div class="skills-grid">
-    <div>
-      <h3>Technical Skills</h3>
-      <ul>
-        <li>Cybersecurity Fundamentals</li>
-        <li>Networking & IT Support</li>
-        <li>Kali Linux</li>
-        <li>Digital Safety & Data Protection</li>
-        <li>Problem Solving & Research</li>
-      </ul>
+    <div class="skill-col">
+      <div class="skill-group-title">🛡 Technical</div>
+      <div class="pill-wrap">
+        <span class="pill">Cybersecurity Fundamentals</span>
+        <span class="pill">Networking &amp; IT Support</span>
+        <span class="pill">Kali Linux</span>
+        <span class="pill">Digital Safety</span>
+        <span class="pill">Data Protection</span>
+        <span class="pill">Problem Solving</span>
+        <span class="pill">Research</span>
+      </div>
     </div>
-
-    <div>
-      <h3>Creative Skills</h3>
-      <ul>
-        <li>Graphic Design (Canva, Photoshop)</li>
-        <li>Photography</li>
-        <li>Video Editing</li>
-        <li>Content Creation</li>
-      </ul>
+    <div class="skill-col">
+      <div class="skill-group-title">🎨 Creative</div>
+      <div class="pill-wrap">
+        <span class="pill">Graphic Design</span>
+        <span class="pill">Canva</span>
+        <span class="pill">Photoshop</span>
+        <span class="pill">Photography</span>
+        <span class="pill">Video Editing</span>
+        <span class="pill">Content Creation</span>
+        <span class="pill">Brand Building</span>
+      </div>
     </div>
   </div>
 </section>
 
-<!-- PROJECTS -->
-<section>
-  <h2><i class="fas fa-laptop"></i> Projects</h2>
-  <ul>
-    <li><strong>AI-Based Savings App</strong> – AI-powered financial application</li>
-    <li><strong>Cryptex</strong> – Encryption and decryption system</li>
-    <li><strong>JavaFX Dashboard</strong> – Data visualization system</li>
-    <li><strong>College Companion</strong> – AI-powered student assistant</li>
-  </ul>
+
+<!-- ══════════════════════════════
+     PROJECTS
+══════════════════════════════ -->
+<section id="projects" class="reveal">
+  <h2><span class="section-num">03.</span> Projects</h2>
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="project-icon">🤖</div>
+      <div class="project-name">AI-Based Savings App</div>
+      <p class="project-desc">
+        An AI-powered financial application designed to help users
+        intelligently manage and grow their savings.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">🔐</div>
+      <div class="project-name">Cryptex</div>
+      <p class="project-desc">
+        A robust encryption and decryption system ensuring secure
+        communication and data privacy.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">📊</div>
+      <div class="project-name">JavaFX Dashboard</div>
+      <p class="project-desc">
+        An interactive data visualization system built with JavaFX
+        for intuitive analytics display.
+      </p>
+    </div>
+
+    <div class="project-card">
+      <div class="project-icon">🎓</div>
+      <div class="project-name">College Companion</div>
+      <p class="project-desc">
+        An AI-powered student assistant for academic planning,
+        resources, and campus life support.
+      </p>
+    </div>
+
+  </div>
 </section>
 
-<!-- EXPERIENCE -->
-<section>
-  <h2><i class="fas fa-briefcase"></i> Experience</h2>
-  <ul>
-    <li><strong>Graphic Designer — Stevo Digital</strong> (Current)</li>
-    <li><strong>Founder & Creative Director — PK Designs</strong> (2023–Present)</li>
-    <li><strong>Community Manager — eOfbit Society</strong> (2025–Present)</li>
-    <li><strong>Volunteer — Cameroon National Youth Council</strong></li>
-    <li><strong>Photographer — ICT University Media Team</strong></li>
-  </ul>
+
+<!-- ══════════════════════════════
+     EXPERIENCE & VOLUNTEER
+══════════════════════════════ -->
+<section id="experience" class="reveal">
+  <h2><span class="section-num">04.</span> Experience</h2>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-role">Graphic Designer</div>
+      <div class="tl-org">Stevo Digital</div>
+      <div class="tl-date">Current</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">Founder &amp; Creative Director</div>
+      <div class="tl-org">PK Designs</div>
+      <div class="tl-date">2023 – Present</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">Community Manager</div>
+      <div class="tl-org">eOfbit Society</div>
+      <div class="tl-date">2025 – Present</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">Volunteer — Graphics &amp; Technical Support</div>
+      <div class="tl-org">Cameroon National Youth Council (MINJEC)</div>
+      <div class="tl-date">Past</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">Photographer — Event &amp; Media Coverage</div>
+      <div class="tl-org">ICT University Media Team</div>
+      <div class="tl-date">Past</div>
+    </div>
+  </div>
+
+  <h3 class="sub-heading">Volunteer Experience</h3>
+
+  <div class="timeline">
+    <div class="tl-item">
+      <div class="tl-role">ICT University Media Team</div>
+      <div class="tl-desc">Event photography — ICT4Africa, Youth Events</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">Cameroon National Youth Council (CNJC) </div>
+      <div class="tl-desc">Graphic Design / Hostess &amp; engagement</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">RUGBWA</div>
+      <div class="tl-desc">Campaign design for Gender-Based Violence Awareness</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">BOLD Impact Foundation</div>
+      <div class="tl-desc">Community outreach &amp; engagement</div>
+    </div>
+    <div class="tl-item">
+      <div class="tl-role">Intellibra</div>
+      <div class="tl-desc">Awareness campaigns &amp; event support</div>
+    </div>
+  </div>
 </section>
 
-<!-- VOLUNTEER -->
-<section>
-  <h2><i class="fas fa-hands-helping"></i> Volunteer Experience</h2>
-  <ul>
-    <li>ICT University Media Team – Event photography (ICT4Africa, Youth Events)</li>
-    <li>Cameroon National Youth Council – Graphics & technical support</li>
-    <li>RUGBWA – Campaign design (Gender-Based Violence Awareness)</li>
-    <li>BOLD Impact Foundation – Community outreach</li>
-    <li>Intellibra – Awareness campaigns & event support</li>
-  </ul>
+
+<!-- ══════════════════════════════
+     CERTIFICATIONS & ACHIEVEMENTS
+══════════════════════════════ -->
+<section id="certifications" class="reveal">
+  <h2><span class="section-num">05.</span> Certifications</h2>
+
+  <div class="certs-grid">
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">ISC2 Certified in Cybersecurity</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">TryHackMe Hackfinity Battle (CTF)</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">Linux Fundamentals — Coursera</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">Introduction to Software Engineering — Coursera</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">YALI Network — Entrepreneurship &amp; Resilience</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">Databases</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">Creativity &amp; Innovation</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">Creative Filmmaking Workshop</span></div>
+    <div class="cert-item"><span class="cert-icon">✦</span><span class="cert-name">Shooting Stars Bootcamp — Photography &amp; Content Creation</span></div>
+  </div>
+
+  <h3 class="ach-heading">🏆 Achievements</h3>
+
+  <div class="achievement-list">
+    <div class="achievement-item">
+      <span class="ach-icon">🏆</span>
+      <span class="ach-text">Selected for CyberFoundHer Mentorship Program</span>
+    </div>
+    <div class="achievement-item">
+      <span class="ach-icon">🌟</span>
+      <span class="ach-text">Recognized volunteer by MINJEC</span>
+    </div>
+    <div class="achievement-item">
+      <span class="ach-icon">🌍</span>
+      <span class="ach-text">Participated in World Youth Camp</span>
+    </div>
+    <div class="achievement-item">
+      <span class="ach-icon">📐</span>
+      <span class="ach-text">Completed International Youth Math Challenge Qualification Round</span>
+    </div>
+    <div class="achievement-item">
+      <span class="ach-icon">🔒</span>
+      <span class="ach-text">Participated in Cybersecurity CTF Competitions</span>
+    </div>
+  </div>
 </section>
 
-<!-- CERTIFICATIONS -->
-<section>
-  <h2><i class="fas fa-certificate"></i> Certifications</h2>
-  <ul>
-    <li>ISC2 Certified in Cybersecurity</li>
-    <li>TryHackMe Hackfinity Battle (CTF)</li>
-    <li>Linux Fundamentals (Coursera)</li>
-    <li>Introduction to Software Engineering (Coursera)</li>
-    <li>YALI Network – Entrepreneurship & Resilience</li>
-    <li>Databases</li>
-    <li>Creativity & Innovation</li>
-    <li>Creative Filmmaking Workshop</li>
-    <li>Shooting Stars Bootcamp (Photography & Content Creation)</li>
-  </ul>
+
+<!-- ══════════════════════════════
+     VISION
+══════════════════════════════ -->
+<section class="reveal">
+  <div class="vision-wrap">
+    <h2 style="justify-content:center; border-left:none; padding-left:0;">
+      <span class="section-num">06.</span> Vision
+    </h2>
+    <p class="vision-text">
+      To use <strong>technology</strong> and <strong>creativity</strong> to
+      empower young people, create impact, and contribute to a safer and
+      more innovative digital world.
+    </p>
+    <a href="#contact" class="btn btn-outline">Let's Build Together</a>
+  </div>
 </section>
 
-<!-- ACHIEVEMENTS -->
-<section>
-  <h2><i class="fas fa-trophy"></i> Achievements</h2>
-  <ul>
-    <li>Selected for CyberFoundHer Mentorship Program</li>
-    <li>Recognized volunteer by MINJEC</li>
-    <li>Participated in World Youth Camp</li>
-    <li>Completed International Youth Math Challenge Qualification Round</li>
-    <li>Participated in cybersecurity CTF competitions</li>
-  </ul>
+
+<!-- ══════════════════════════════
+     CONTACT
+══════════════════════════════ -->
+<section id="contact" class="contact-box reveal">
+  <h2><span class="section-num">07.</span> Contact</h2>
+
+  <div class="contact-grid">
+
+    <a href="mailto:preciouskhan1709@gmail.com" class="contact-link">
+      <svg viewBox="0 0 24 24">
+        <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1
+          0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+      </svg>
+      preciouskhan1709@gmail.com
+    </a>
+
+    <!-- Phone → WhatsApp with pre-filled message -->
+    <a
+      href="https://wa.me/237654241088?text=Hello%2C%20Precious%0AMy%20name%20is%20..."
+      target="_blank"
+      rel="noopener"
+      class="contact-link"
+    >
+      <svg viewBox="0 0 24 24">
+        <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94
+          1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198
+          0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213
+          3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227
+          1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421
+          7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0
+          01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988
+          2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885
+          9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157
+          11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882
+          11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335
+          11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+      </svg>
+      +237 654 241 088 (WhatsApp)
+    </a>
+
+    <div class="contact-link" style="pointer-events:none; cursor:default;">
+      <svg viewBox="0 0 24 24">
+        <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75
+          7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5
+          2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+      </svg>
+      Yaoundé, Cameroon
+    </div>
+
+  </div><!-- /contact-grid -->
+
+  <div class="social-row">
+    <a
+      href="https://www.linkedin.com/in/precious-khan-042b46299"
+      target="_blank"
+      rel="noopener"
+      class="btn btn-linkedin"
+    >
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85
+          0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9
+          1.63-1.85 3.36-1.85 3.59 0 4.26 2.37 4.26 5.45v6.29zM5.34
+          7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12
+          20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0
+          1.73v20.54C0 23.23.79 24 1.77 24h20.45C23.2 24 24 23.23 24
+          22.27V1.73C24 .77 23.2 0 22.22 0z"/>
+      </svg>
+      Connect on LinkedIn
+    </a>
+
+    <a
+      href="https://wa.me/237654241088?text=Hello%2C%20Precious%0AMy%20name%20is%20..."
+      target="_blank"
+      rel="noopener"
+      class="btn btn-primary"
+    >
+      💬 WhatsApp Me
+    </a>
+  </div>
+
 </section>
 
-<!-- VISION -->
-<section>
-  <h2><i class="fas fa-bullseye"></i> Vision</h2>
-  <p>
-    To use technology and creativity to empower young people, create impact,
-    and contribute to a safer and more innovative digital world.
-  </p>
-</section>
 
-<!-- CONTACT -->
-<section id="contact" class="contact-box">
-  <h2><i class="fas fa-envelope"></i> Contact</h2>
-  <p><strong>Email:</strong> preciouskhan1709@gmail.com</p>
-  <p><strong>Phone:</strong> +237 654241088</p>
-  <p><strong>Location:</strong> Yaoundé, Cameroon</p>
-</section>
-
-<!-- FOOTER -->
+<!-- ══════════════════════════════
+     FOOTER
+══════════════════════════════ -->
 <footer>
-  <p>© 2026 Ndoh Precious Khan | Portfolio</p>
+  © 2026 Ndoh Precious Khan &nbsp;|&nbsp; Yaoundé, Cameroon
 </footer>
+
+
+<!-- ══════════════════════════════
+     SCROLL REVEAL SCRIPT
+══════════════════════════════ -->
+<script>
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+</script>
 
 </body>
 </html>
